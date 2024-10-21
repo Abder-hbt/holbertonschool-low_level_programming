@@ -1,11 +1,15 @@
 #include <stdio.h>
 
 
-/*
- *La fonction "int main(void)" est le point d'entrée du programme.
- * Elle affiche un message et retourne 0 pour indiquer
- * que le programme s'est terminé correctement.
- */
+/**
+*main - Entry point of the program
+*
+* Description: This function prints a welcome oh the programming
+* to the screen using the puts function. It returns 0
+* to indicate successful program termination.
+*
+* Return: 0 if everything goes well, another value otherwise.
+*/
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
