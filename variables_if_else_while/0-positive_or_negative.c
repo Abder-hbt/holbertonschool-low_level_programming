@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /* more headers goes there */
 
 /**
@@ -17,15 +18,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n == 0)
 	{
-	printf("est nul");
+	puts("est nul");
 	}
-	if (n > 0)
+	else if (n > 0)
 	{
-	printf("est positf"};
+	puts("est positf");
 	}
-	if (n < 0)
+	else
 	{
-	printf("est négatif");
+	puts("est négatif");
 	}
 	return (0);
 }
