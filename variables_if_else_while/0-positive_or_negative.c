@@ -22,7 +22,7 @@ int main(void)
 	}
 	else if (n > 0)
 	{
-	puts("est positf");
+	puts("est positif");
 	}
 	else
 	{
