@@ -17,5 +17,7 @@ printf("Size of int: %lu bytesn\n", sizeof(int));
 printf("Size of float: %lu bytes\n", sizeof(float));
 printf("Size of double: %lu bytes\n", sizeof(double));
 printf("Size of pointer: %lu bytes\n", sizeof(void *));
+printf("Size of long int: %lu bytes\n", sizeof(long int));
+printf("Size of long long int: %lu bytes\n", sizeof(long long int));
 return (0);
 }
