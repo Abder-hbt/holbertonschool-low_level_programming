@@ -18,15 +18,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n == 0)
 	{
-	puts("est nul");
+	puts("is zero");
 	}
 	else if (n > 0)
 	{
-	puts("est positif");
+	puts("is positive");
 	}
 	else
 	{
-	puts("est négatif");
+	puts("is negative");
 	}
 	return (0);
 }
