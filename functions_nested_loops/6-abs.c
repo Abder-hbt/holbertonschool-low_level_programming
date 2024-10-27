@@ -11,11 +11,16 @@
 
 /*(int c) styloc for function main goes there */
 
-int print_last_digit(int)
+int _abs(int c)
 {
-int n = 123;
-int l = n % 10;
+	if (c < 0)
+	{
+		int abs_val;
 
-_putchar(%d, l);
-return (0);
+		abs_val = c * -1;
+
+		return (abs_val);
+	}
+
+	return (c);
 }
