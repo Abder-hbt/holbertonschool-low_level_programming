@@ -2,12 +2,14 @@
 /* more headers goes there */
 
 /**
-*print_alphabet_x10 - Entry point of the program
+*_islower - Entry point of the program
 *
-* Return: 0 if everything goes well, another value otherwise.
+*Return: 0 if everything goes well, another value otherwise.
+*_islower - Checks for lowercase character
+*@c: The character to be checked
 */
 
-/* betty styloc for function main goes there */
+/*(int c) styloc for function main goes there */
 
 int _islower(int c)
 {
