@@ -2,7 +2,7 @@
 /* more headers goes there */
 
 /**
-*_isalpha - Entry point of the program
+*_abs - Entry point of the program
 *
 *Return: 0 if everything goes well, another value otherwise.
 *_islower - Checks for lowercase character
