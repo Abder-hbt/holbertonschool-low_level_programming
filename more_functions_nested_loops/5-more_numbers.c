@@ -13,8 +13,8 @@ void more_numbers(void)
 	int I;
 
 	for (I = 0; I < 10; I++)
-	{	
-	for (i = 1 ; i <= 14 ; i++)
+	{
+	for (i = 0 ; i <= 14 ; i++)
 	{
 	if (i >= 10)
 	{
