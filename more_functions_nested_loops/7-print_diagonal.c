@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_line - Affiche les chiffres de 0 à 9
+ * print_diagonal - Affiche les chiffres de 0 à 9
  *
  * @n : blablabla
  *
@@ -12,7 +12,7 @@ void print_diagonal(int n)
 {
 	int i;
 	int e;
-		if (n < 0)
+		if (n <= 0)
 	{
 		_putchar('\n');
 	}
@@ -20,7 +20,7 @@ void print_diagonal(int n)
 	{
 		for (i = 0; i < n; i++)
 		{
-			for (e = 0; e < i; e++)	
+		for (e = 0; e < i; e++)
 	{
 		_putchar(32);
 
