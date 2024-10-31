@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- * reset_to_98 - Affiche les chiffres de 0 à 9
- *
- * @n : blablabla
+ * _puts - Prints a string followed by a new line
+ * @str: The string to be printed
  *
  * Return: Rien
  */
@@ -17,4 +16,5 @@ void _puts(char *str)
 		_putchar(str[L]);
 		L++;
 	}
+		_putchar('\n');
 }
