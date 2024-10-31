@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * reset_to_98 - Affiche les chiffres de 0 à 9
+ * _strlen - Affiche les chiffres de 0 à 9
  *
- * @n : blablabla
+ * @s : blablabla
  *
  * Return: Rien
  */
@@ -15,7 +15,6 @@ int _strlen(char *s)
 	while (s[L] != '\0')
 		L++;
 	{
-
-		return L;
+		return (L);
 	}
 }
