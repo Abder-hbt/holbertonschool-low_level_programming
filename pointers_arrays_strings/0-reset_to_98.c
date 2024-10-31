@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_line - Affiche les chiffres de 0 à 9
+ * reset_to_98 - Affiche les chiffres de 0 à 9
  *
  * @n : blablabla
  *
