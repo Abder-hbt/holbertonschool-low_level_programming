@@ -5,7 +5,7 @@
  * @str: The string containing characters.
  */
 
-void puts2(char*str)
+void puts2(char *str)
 
 {
 	int index = 0, len = 0;
