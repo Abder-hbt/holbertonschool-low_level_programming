@@ -1,5 +1,14 @@
 #include "main.h"
 #include <stddef.h>
+/**
+ * _strchr - ecris le char b sur valeur pointer par s
+ *
+ * @s : pointeur
+ *
+ * @c : nouvelle valeur
+ *
+ * Return: NULL
+ */
 
 char *_strchr(char *s, char c)
 {
