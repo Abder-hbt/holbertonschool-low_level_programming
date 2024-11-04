@@ -1,14 +1,27 @@
 #include"main.h"
 
+
 unsigned int _strspn(char *s, char *accept)
-
 {
-	unsigned int i;
-	unsigned int a;
+	unsigned int bytes = 0;
+	int index;
 
+	while (*s)
 	{
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		for (a = 0; accept[a] != s[i]; a++ )
-			if (accept[a] ==#include"main.h"
+		for (index = 0; accept[index]; index++)
+		{
+			if (*s == accept[index])
+			{
+				bytes++;
+				break;
+			}
 
+			else if (accept[index + 1] == '\0')
+				return (bytes);
+		}
+
+		s++;
+	}
+
+	return (bytes);
+}
