@@ -1,3 +1,7 @@
+#include"main.h"
+#include<stdlib.h>
+#include<string.h>
+
 /**
  * _strdup - Returns a pointer to a newly-allocated space in memory
  *           containing a copy of the string given as parameter.
@@ -5,11 +9,6 @@
  *
  * Return:char
  */
-
-#include"main.h"
-#include<stdlib.h>
-#include<string.h>
-
 
 char *_strdup(char *str)
 
