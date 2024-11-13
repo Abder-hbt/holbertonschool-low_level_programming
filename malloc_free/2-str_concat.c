@@ -16,13 +16,15 @@ char *str_concat(char *s1, char *s2)
 
 {
 	int i, glen;
-	int len1 = 0;
-	int len2 = 0;
+	int len1 = 0, len2 = 0;
 	char *clen;
 
-	if (s1 == NULL && s2 == NULL)
+	if (s1 == NULL)
 	{
 		s1 = "";
+	}
+	if (s2 == NULL)
+	{
 		s2 = "";
 	}
 
@@ -34,7 +36,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		len2++;
 	}
-
 	glen = len1 + len2 + 1;
 	clen = malloc(glen * sizeof(char));
 
