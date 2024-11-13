@@ -15,7 +15,7 @@
 char *str_concat(char *s1, char *s2)
 
 {
-	int a, i, glen;
+	int i, glen;
 	int len1 = 0;
 	int len2 = 0;
 	char *clen;
@@ -48,9 +48,9 @@ char *str_concat(char *s1, char *s2)
 		clen[i] = s1[i];
 	}
 
-	for (a = 0; a < len2; a++)
+	for (i = 0; i < len2; i++)
 	{
-		clen[len1 + a] = s2[a];
+		clen[len1 + i] = s2[i];
 	}
 	clen[len1 + len2] = '\0';
 	return (clen);
