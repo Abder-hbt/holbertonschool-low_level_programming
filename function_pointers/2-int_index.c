@@ -5,8 +5,8 @@
  * @cmp: Pointer to the function used to compare values.
  *
  * Return: The index of the first matching element,
- *         -1 if no match is found or if size <= 0.
- */ 
+ * -1 if no match is found or if size <= 0.
+ */
 
 #include"function_pointers.h"
 #include <stddef.h>
