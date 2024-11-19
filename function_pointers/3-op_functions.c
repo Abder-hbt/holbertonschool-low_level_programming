@@ -10,10 +10,10 @@
  * 
  * Return: The sum of a and b.
  */
-int op_add(int a, int b)
+int op_add(int num1, int num2)
 
 {
-	return ( a + b);
+	return ( num1 + num2);
 }
 
 /**
@@ -23,10 +23,10 @@ int op_add(int a, int b)
  * 
  * Return: The difference of a and b.
  */
-int op_sub(int a, int b)
+int op_sub(int num1, int num2)
 
 {
-	return (a - b);
+	return (num1 - num2);
 }
 
 /**
@@ -36,10 +36,10 @@ int op_sub(int a, int b)
  *
  * Return: The product of a and b.
  */
-int op_mul(int a, int b)
+int op_mul(int num1, int num2)
 
 {
-	return (a * b);
+	return (num1 * num2);
 }
 
 /**
@@ -50,14 +50,14 @@ int op_mul(int a, int b)
  * Return: The result of the division of a by b.
  *         If b is 0, exits the program with status 100.
  */
-int op_div(int a, int b)
+int op_div(int num1, int num2)
 
 {
-	if (b == 0)
+	if (num2 == 0)
 	{
 	exit(100);
 	}
-	return (a / b);
+	return (num1 / num2);
 }
 
 /**
@@ -68,12 +68,12 @@ int op_div(int a, int b)
  * Return: The remainder of the division of a by b.
  *         If b is 0, exits the program with status 100.
  */
-int op_mod(int a, int b)
+int op_mod(int num1, int num2)
 
 {
-	if (b == 0)
+	if (num2 == 0)
 	{
 	exit(100);
 	}
-	return (a % b);
+	return (num1 % num2);
 }

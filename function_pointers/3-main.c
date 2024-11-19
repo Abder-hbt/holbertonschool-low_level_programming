@@ -23,8 +23,8 @@
 int main(int argc, char  *argv[])
 
 {
-	int i1;
-	int i2;
+	int num1;
+	int num2;
 	int (*w)(int, int);
 	int r;
 
@@ -34,8 +34,8 @@ int main(int argc, char  *argv[])
 	exit(98);
 	}
 
-	i1 = atoi(argv[1]);
-	i2 = atoi(argv[3]);
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
 
 	w = get_op_func(argv[2]);
 	if (w == NULL)
@@ -46,13 +46,13 @@ int main(int argc, char  *argv[])
 
 	if (strcmp(argv[2], "/") == 0 || strcmp(argv[2], "%") == 0)
 	{
-	if (i2 == 0)
+	if (num2 == 0)
 	{
 	printf("Error\n");
 	exit(100);
 	}
 	}
-	r = (w)(i1, i2);
+	r = (w)(num1, num2);
 	printf("%d\n", r);
 	return (0);
 }
