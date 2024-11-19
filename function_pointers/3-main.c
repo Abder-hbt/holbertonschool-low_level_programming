@@ -44,13 +44,10 @@ int main(int argc, char  *argv[])
 	exit(99);
 	}
 
-	if (strcmp(argv[2], "/") == 0 || strcmp(argv[2], "%") == 0)
-	{
-	if (num2 == 0)
+	if ((strcmp(argv[2], "/") == 0 || strcmp(argv[2], "%") == 0) && num2 == 0)
 	{
 	printf("Error\n");
 	exit(100);
-	}
 	}
 	r = (w)(num1, num2);
 	printf("%d\n", r);
