@@ -3,10 +3,10 @@
 /**
  * sum_them_all - Returns the sum of all its parameters.
  * @n: The number of arguments passed to the function.
- * 
+ *
  * Description: This function sums all integers passed to it as arguments.
  * If no arguments are passed (n = 0), it returns 0.
- * 
+ *
  * Return: The sum of all the arguments.
  */
 
