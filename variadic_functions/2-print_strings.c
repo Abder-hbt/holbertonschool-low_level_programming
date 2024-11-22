@@ -19,7 +19,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *a;
 	va_list args;
 
-	if (n == 0 && separator == NULL)
+	if (n == 0 || separator == NULL)
 	{
 		return;
 	}
