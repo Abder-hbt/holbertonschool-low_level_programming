@@ -35,7 +35,9 @@ free(strC);
 return (NULL);
 }
 
+
 newNode->str = strC;
+newNode->len = strlen(str);
 newNode->next = *head;
 *head = newNode;
 
