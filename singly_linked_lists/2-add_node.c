@@ -1,50 +1,41 @@
-/**
- * add_node - Adds a new node at the beginning of a linked list.
- * @head: A pointer to the head of the list_t list.
- * @str: A string to be duplicated and added to the new node.
- *
- * Description: This function allocates memory for a new node, duplicates
- * the string `str`, and inserts the new node at the beginning of the list.
- *
- * Return: The address of the new element, or NULL if it failed.
- */
+#include "lists.h"
 #include <stdlib.h>
 #include <string.h>
-#include "lists.h"
+
+
+/**
+ * add_node - adds a new node at the end of a list_t list.
+ * @head: double pointer to the head of the list.
+ * @str: string to be duplicated and added to the new node.
+ * Return: the address of the new element, or NULL if it failed.
+ */
 
 list_t *add_node(list_t **head, const char *str)
-
 {
-
-list_t *newNode = NULL;
-unsigned index = 0;
+list_t *new_node;
 char *new_str;
+unsigned int len = 0;
 
-while (str[index] != '\0')
-{
-index++;
-}
+new_node = malloc(sizeof(list_t));
 
-newNode = malloc(sizeof(list_t));
-if (newNode == NULL)
-
-{
+if (new_node == NULL)
 return (NULL);
-}
 
 new_str = strdup(str);
 
 if (new_str == NULL)
 {
-    free(newNode);
-    return NULL;
+free(new_node);
+return (NULL);
 }
 
-newNode->str = new_str;
-newNode->len = index;
-newNode->next = *head;
-*head = newNode;
+while (str[len])
+len++;
 
-return (newNode);
+new_node->str = new_str;
+new_node->len = len;
+new_node->next = *head;
+*head = new_node;
 
+return (new_node);
 }
