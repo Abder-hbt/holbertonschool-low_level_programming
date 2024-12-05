@@ -1,3 +1,11 @@
+/**
+ * add_node - Adds a new node at the beginning of a list_t list.
+ * @head: A double pointer to the head of the linked list.
+ * @str: The string to be added to the new node (it will be duplicated).
+ *
+ * Return: Address of the new element, or NULL if it failed.
+ */
+
 #include <stdlib.h>
 #include <string.h>
 #include "lists.h"
