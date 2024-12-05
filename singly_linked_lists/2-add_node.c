@@ -9,7 +9,7 @@
  * Return: The address of the new element, or NULL if it failed.
  */
 
-
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "lists.h"
@@ -31,11 +31,13 @@ newNode = malloc(sizeof(list_t));
 if (newNode == NULL)
 
 {
+free(strC);
 return (NULL);
 }
 
 
 newNode->str = strC;
+newNode->len = strlen(str);
 newNode->next = *head;
 *head = newNode;
 
