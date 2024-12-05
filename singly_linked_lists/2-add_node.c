@@ -33,13 +33,13 @@ free(strC);
 return (NULL);
 }
 
-while(str[index] != '\0')
+while (str[index] != '\0')
 {
 index++;
 }
 newNode->str = strC;
 newNode->next = *head;
- newNode->len = index;
+newNode->len = index;
 *head = newNode;
 
 return (newNode);
