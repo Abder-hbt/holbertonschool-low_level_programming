@@ -8,14 +8,12 @@
  * Return: The address of the new element, or NULL if it failed.
  */
 
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "lists.h"
+#include <stdio.h>
 
 size_t print_list(const list_t *h)
 {
-size_t count = 0;
+int count = 0;
 
 if (h == NULL)
 {
@@ -23,19 +21,18 @@ return (0);
 }
 
 while (h != NULL)
-{
 if (h->str == NULL)
 {
 printf("[0] (nil)\n");
 }
 else
 {
-size_t str_len = strlen(h->str);
-printf("[%lu] %s\n", str_len, h->str);
-}
+printf("[%u] %s\n", h->len, h->str);
+
 count++;
 h = h->next;
 }
 
 return (count);
+
 }
