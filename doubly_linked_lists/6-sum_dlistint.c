@@ -8,7 +8,7 @@
  * Return: If the list is empty - 0.
  *         Otherwise - the sum of all the data.
  */
-int sum_dlistint(dlistint_t *head);
+int sum_dlistint(dlistint_t *head)
 
 {
 int sum = 0;
