@@ -1,11 +1,11 @@
 #include"main.h"
 #include <stdio.h>
 /**
- * print_diagsums - ecris le char b sur valeur pointer par s
+ * print_diagsums/**
+ * print_chessboard - ecris le char b sur valeur pointer par s
  *
  * @a : pointeur
  *
- * @size : blabla
  *
  * Return: NULL
  */
