@@ -10,7 +10,7 @@
  *         Otherwise - the located node.
  */
 
-dlistint_t *get_nodeint_at_index(dlistint_t *head, unsigned int index)
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 
 {
 unsigned int node;
