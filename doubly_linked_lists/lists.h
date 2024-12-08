@@ -8,7 +8,6 @@
  *       and types written in the 0x12-more_singly_linked_lists directory.
  */
 
-#include <stdlib.h>
 /**
  * struct dlistint_s - doubly linked list
  * @n: integer
@@ -18,6 +17,9 @@
  * Description: doubly linked list node structure
  * 
  */
+
+#include <stddef.h>
+
 typedef struct dlistint_s
 {
     int n;
