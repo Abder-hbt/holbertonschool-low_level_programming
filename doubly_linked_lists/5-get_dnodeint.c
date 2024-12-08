@@ -1,26 +1,27 @@
 #include "lists.h"
 
 /**
- * free_dlistint2 - Frees a listint_t list.
- * @head: A pointer to the address of the
- *        head of the listint_t list.
+ * get_nodeint_at_index - Locates a given node of
+ *                        a listint_t linked list.
+ * @head: A pointer to the head of the listint_t list.
+ * @index: The index of the node to locate - indices start at 0.
  *
- * Description: Sets the head to NULL.
+ * Return: If the node does not exist - NULL.
+ *         Otherwise - the located node.
  */
 
-void free_dlistint2(dlistint_t **head)
-{
-dlistint_t *tmp;
+dlistint_t *get_nodeint_at_index(dlistint_t *head, unsigned int index)
 
+{
+unsigned int node;
+
+for (node = 0; node < index; node++)
+{
 if (head == NULL)
-return;
+return (NULL);
 
-while (*head)
-{
-tmp = (*head)->next;
-free(*head);
-*head = tmp;
+head = head->next;
 }
 
-head = NULL;
+return (head);
 }
