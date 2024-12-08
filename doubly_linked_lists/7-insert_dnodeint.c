@@ -1,47 +1,65 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
- * insert_dnodeint_at_index - Inserts a new node to a listint_t
- *                           list at a given position.
- * @head: A pointer to the address of the
- *        head of the listint_t list.
- * @idx: The index of the listint_t list where the new
- *       node should be added - indices start at 0.
- * @n: The integer for the new node to contain.
+ * insert_dnodeint_at_index - Inserts a new node in a doubly linked list
+ *                            at a given position.
+ * @h: A pointer to the head of the doubly linked list.
+ * @idx: The index where the new node should be added (starting at 0).
+ * @n: The value to store in the new node.
  *
- * Return: If the function fails - NULL.
- *         Otherwise - the address of the new node.
+ * Return: If successful - the address of the new node.
+ *         Otherwise - NULL.
  */
-
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 {
-dlistint_t *new, *copy = *head;
-unsigned int node;
+
+dlistint_t *new, *current = *h;
+unsigned int i;
+
+if (h == NULL)
+return (NULL);
+
 
 new = malloc(sizeof(dlistint_t));
 if (new == NULL)
 return (NULL);
 
 new->n = n;
+new->next = NULL;
+new->prev = NULL;
 
 if (idx == 0)
 {
-new->next = copy;
-*head = new;
+new->next = *h;
+if (*h != NULL)
+(*h)->prev = new;
+*h = new;
 return (new);
 }
 
-for (node = 0; node < (idx - 1); node++)
-{
-if (copy == NULL || copy->next == NULL)
+
+for (i = 0; current != NULL && i < idx - 1; i++)
+current = current->next;
+
+
+if (current == NULL)
 return (NULL);
 
-copy = copy->next;
+if (current->next == NULL && i == idx - 1)
+{
+current->next = new;
+new->prev = current;
+return (new);
 }
 
-new->next = copy->next;
-copy->next = new;
+new->next = current->next;
+if (current->next != NULL)
+current->next->prev = new;
+
+current->next = new;
+new->prev = current;
 
 return (new);
 }
